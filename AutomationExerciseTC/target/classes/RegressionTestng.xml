@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationExercise_FullSuite">
+    <listeners>
+        <listener class-name="Utilities.ReportListener"/>
+    </listeners>
+
+    <test name="Authentication_Tests">
+        <classes>
+            <class name="TestCases.SignupTests"/>
+            <class name="TestCases.LoginTests"/>
+        </classes>
+    </test>
+
+    <test name="Product_Browsing_Tests">
+        <classes>
+            <class name="TestCases.ProductTests"/>
+            <class name="TestCases.SearchTests"/>
+        </classes>
+    </test>
+
+    <test name="Checkout_Tests">
+        <classes>
+            <class name="TestCases.CartTests"/>
+            <class name="TestCases.CheckoutTests"/>
+        </classes>
+    </test>
+
+    <test name="Other_Tests">
+        <classes>
+            <class name="TestCases.OtherTests"/>
+        </classes>
+    </test>
+</suite>
